@@ -1,1 +1,89 @@
-<h1>Blood Group Detection App</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Group Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                        url("{{ url_for('static', filename='bg.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(20, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            width: 400px;
+            box-shadow: 0 0 25px red;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: #ff1a1a;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px red;
+        }
+
+        input[type="file"] {
+            margin: 15px 0;
+            color: white;
+        }
+
+        button {
+            background: red;
+            border: none;
+            padding: 10px 25px;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: black;
+            border: 1px solid red;
+            box-shadow: 0 0 10px red;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 22px;
+            color: #ff4d4d;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🩸 Blood Group Predictor</h1>
+
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required><br>
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result">
+                Predicted Blood Group: {{ prediction }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
