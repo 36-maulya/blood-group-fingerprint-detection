@@ -111,9 +111,9 @@ Model predicts blood group in real-time.
 
 ngrok URL provides public access (temporary live link).
 
-App Screenshot (Placeholder):
+App Screenshot (Placeholder):(flask_app.png)
 
-⚡ How to Run
+**How to Run**
 
 Clone the repository:
 
