@@ -53,6 +53,8 @@ ngrok – Expose local Flask app as public URL
 Google Colab – GPU-enabled cloud environment
 
 **Methodology**
+
+
 1️⃣ **Data Preprocessing**
 
 Resize all images to 128x128 pixels.
@@ -109,7 +111,7 @@ Upload fingerprint images via Flask app.
 
 Model predicts blood group in real-time.
 
-ngrok URL provides public access (temporary live link).
+ngrok URL provides public access ("https://lobeliaceous-unconjecturable-aleah.ngrok-free.dev").
 
 App Screenshot (Placeholder):(flask_app.png)
 
