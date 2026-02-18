@@ -117,7 +117,7 @@ App Screenshot (Placeholder):(flask_app.png)
 
 Clone the repository:
 
-git clone <your_repo_link>
+git clone <https://github.com/36-maulya/blood-group-fingerprint-detection.git>
 
 
 Open the Colab notebook and run all cells:
@@ -132,7 +132,7 @@ Launch Flask app via ngrok
 
 Access the live URL to upload fingerprint images and see predictions.
 
-🔮 Future Improvements
+**Future Improvements**
 
 Add data augmentation to improve generalization.
 
