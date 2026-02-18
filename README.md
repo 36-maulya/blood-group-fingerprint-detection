@@ -1,6 +1,6 @@
-Blood Group Detection from Fingerprint Images 🩸🖐️
+**Blood Group Detection from Fingerprint Images**
 
-🚀 Project Overview
+**Project Overview**
 
 This project is a deep learning-based system that predicts a person’s blood group from their fingerprint images using a Convolutional Neural Network (CNN).
 
@@ -12,7 +12,7 @@ Frontend: Flask web app
 
 Deployment: Google Colab + ngrok (or future serverless deployment)
 
-🎯 Motivation
+**Motivation**
 
 Traditional blood group detection requires blood samples.
 
@@ -20,7 +20,7 @@ Using fingerprints provides a non-invasive alternative.
 
 Learn deep learning, computer vision, and web deployment in one project.
 
-📂 Dataset
+**Dataset**
 
 Fingerprint images labeled with blood groups.
 
@@ -32,7 +32,7 @@ Normalizing pixel values to [0,1]
 
 One-hot encoding blood group labels
 
-Folder structure:
+**Folder structure:**
 
 dataset/
     A/
@@ -40,7 +40,7 @@ dataset/
     AB/
     O/
 
-🛠️ Technologies Used
+**Technologies Used**
 
 Python – Programming language
 
@@ -52,8 +52,8 @@ ngrok – Expose local Flask app as public URL
 
 Google Colab – GPU-enabled cloud environment
 
-📈 Methodology
-1️⃣ Data Preprocessing
+**Methodology**
+1️⃣ **Data Preprocessing**
 
 Resize all images to 128x128 pixels.
 
@@ -61,7 +61,7 @@ Normalize pixel values.
 
 Split dataset into training (80%) and validation (20%).
 
-2️⃣ CNN Architecture
+2️⃣ **CNN Architecture**
 
 3 Convolutional layers with ReLU activation
 
@@ -80,7 +80,7 @@ max_pooling2d (MaxPooling2D) (None, 63, 63, 32)      0
 ...
 dense_2 (Dense)               (None, 4)               516
 
-3️⃣ Model Training
+3️⃣ **Model Training**
 
 Loss: categorical_crossentropy
 
@@ -93,9 +93,7 @@ Batch size: 32
 Training Graphs (Example Placeholder):
 
 
-
-
-4️⃣ Model Evaluation
+4️⃣ **Model Evaluation**
 
 Validation Accuracy: [Insert your accuracy, e.g., 92%]
 
@@ -104,7 +102,8 @@ Predictions Example:
 Fingerprint	Predicted Blood Group
 fingerprint1.jpg	A
 fingerprint2.jpg	AB
-💻 Web Application
+
+**Web Application**
 
 Upload fingerprint images via Flask app.
 
